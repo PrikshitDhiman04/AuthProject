@@ -3,7 +3,7 @@
 import axios from "axios";
 import { set } from "mongoose";
 import Link from "next/link";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function VerifyEmail() {
   const [token, setToken] = useState("");
@@ -73,10 +73,8 @@ export default function VerifyEmail() {
       )}
       {error && (
         <div>
-          <h2 className="text-red-600 font-bold">
-            Email verification failed!
-          </h2>
-            <p className="text-gray-600">{error}</p>
+          <h2 className="text-red-600 font-bold">Email verification failed!</h2>
+          <p className="text-gray-600">{error}</p>
         </div>
       )}
     </div>

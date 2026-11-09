@@ -13,7 +13,7 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
     } else if (emailType === "RESET") {
       await User.findByIdAndUpdate(userId, {
         forgotPasswordToken: hashedToken,
-        forgotPasswordTokenExpiry: Date.now() + 3600000,
+        forgotPasswordTokenExpiry: new Date(Date.now() + 3600000),
       });
     }
 
@@ -21,8 +21,8 @@ export const sendEmail = async ({ email, emailType, userId }: any) => {
       host: "sandbox.smtp.mailtrap.io",
       port: 2525,
       auth: {
-        user: "0a177066e3e859",
-        pass: "d99eac8278e014",
+        user: process.env.NODEMAILER_USER,
+        pass: process.env.NODEMAILER_PASS,
       },
     });
 
