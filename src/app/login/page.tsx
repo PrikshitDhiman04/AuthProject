@@ -67,6 +67,15 @@ export default function LoginPage() {
         Login
       </button>
       <Link href="/signup">Visit Signup page</Link>
+
+      <div className="flex justify-end mt-2 mb-5">
+        <Link
+          href="/forgotpassword"
+          className="text-sm font-medium text-[#8b5e3c] hover:text-[#5c3d2e] hover:underline transition"
+        >
+          Forgot Password?
+        </Link>
+      </div>
     </div>
   );
 }
