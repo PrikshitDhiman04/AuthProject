@@ -85,9 +85,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
+Project Structure
 
-```text
 my-app/
 ├── src/
 │   ├── app/
@@ -101,4 +100,28 @@ my-app/
 │   │   ├── login/
 │   │   ├── signup/
 │   │   ├── profile/
-│   │   ├──
+│   │   ├── verifyemail/
+│   │   ├── forgotpassword/
+│   │   └── resetpassword/
+│   ├── dbconfig/
+│   ├── helpers/
+│   └── models/
+└── package.json
+
+Future Improvements
+
+Improve form validation.
+
+Add additional account security features.
+
+Enhance user profile management.
+
+Improve UI and accessibility.
+
+Author
+
+Prikshit Dhiman
+
+B.Tech Computer Science Engineering Student
+
+GitHub
